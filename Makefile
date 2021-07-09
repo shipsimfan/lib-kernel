@@ -45,15 +45,15 @@ clean:
 .SECONDEXPANSION:
 
 $(TARGET): $(ASM_OBJ_FILES) $(C_OBJ_FILES)
-	@echo " $(CYAN)Archiving$(RESET) $@ . . ."
+	@echo "   $(CYAN)Archiving$(RESET) $@ . . ."
 	@$(AR) $(AR_FLAGS) $@ $^
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $$(@D)/.
-	@echo " $(CYAN)Compiling$(RESET) $^ . . ."
+	@echo "   $(CYAN)Compiling$(RESET) $^ . . ."
 	@$(CC) $(CC_FLAGS) -o $@ $^
 
 $(OBJ_DIR)/%.asm.o: $(SRC_DIR)/%.asm | $$(@D)/.
-	@echo "$(CYAN)Assembling$(RESET) $^ . . ."
+	@echo "  $(CYAN)Assembling$(RESET) $^ . . ."
 	@$(ASM) $(ASM_FLAGS) -o $@ $^
 
 # DIRECTORY RULES
@@ -65,7 +65,6 @@ $(OBJ_DIR)%/.:
 
 dirs:
 	@mkdir -p $(OBJ_DIR)
-	@mkdir -p $(LIB_INSTALL_DIR)/obj
 
 # . RULES
 .PRECIOUS: $(OBJ_DIR)/. $(OBJ_DIR)%/.
