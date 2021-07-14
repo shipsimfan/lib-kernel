@@ -22,6 +22,9 @@
 #define CONSOLE_WRITE_SYSCALL 0x3000
 #define CONSOLE_WRITE_STR_SYSCALL 0x3001
 
+// EVENT SYSTEM CALLS (0x4000 - 0x4FFF)
+#define PEEK_EVENT_SYSCALL 0x4000
+
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
 #define system_call2(code, arg1, arg2) system_call(code, arg1, arg2, 0, 0, 0)
