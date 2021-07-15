@@ -6,7 +6,6 @@
 #include "los/filesystem.h"
 #include "los/keycode.h"
 #include "los/process.h"
-#include "los/syscall.h"
 #include "los/thread.h"
 
 #endif
