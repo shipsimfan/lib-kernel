@@ -3,5 +3,6 @@
 
 void console_write(char character);
 void console_write_str(const char* string);
+void console_clear();
 
 #endif
