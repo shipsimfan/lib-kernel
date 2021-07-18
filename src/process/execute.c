@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-ProcessID execute(const char* filename) { return system_call1(EXECUTE_SYSCALL, (uint64_t)filename); }
+ProcessID execute(const char* filename, const char** argv) { return system_call2(EXECUTE_SYSCALL, (uint64_t)filename, (uint64_t)argv); }
