@@ -17,13 +17,13 @@ typedef struct {
     size_t size;
 } Dirent;
 
-uint64_t open_file(const char* filepath);
+int64_t open_file(const char* filepath);
 void close_file(uint64_t fd);
-uint64_t seek_file(uint64_t fd, uint64_t offset, uint64_t seek_from);
-uint64_t read_file(uint64_t fd, void* buffer, uint64_t buffer_len);
+int64_t seek_file(uint64_t fd, uint64_t offset, uint64_t seek_from);
+int64_t read_file(uint64_t fd, void* buffer, uint64_t buffer_len);
 
-uint64_t open_directory(const char* path);
+int64_t open_directory(const char* path);
 void close_directory(uint64_t dd);
-uint64_t read_directory(uint64_t dd, Dirent* dest);
+int64_t read_directory(uint64_t dd, Dirent* dest);
 
 #endif

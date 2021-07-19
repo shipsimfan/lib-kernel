@@ -1,8 +1,10 @@
 #ifndef __LOS_CONSOLE_H
 #define __LOS_CONSOLE_H
 
-void console_write(char character);
-void console_write_str(const char* string);
-void console_clear();
+#include <stdint.h>
+
+int64_t console_write(char character);
+int64_t console_write_str(const char* string);
+int64_t console_clear();
 
 #endif

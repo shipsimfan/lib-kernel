@@ -12,6 +12,6 @@ typedef struct {
     uint64_t param2;
 } Event;
 
-uint64_t peek_event(Event* pevent);
+int64_t peek_event(Event* pevent);
 
 #endif

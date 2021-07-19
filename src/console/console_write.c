@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-void console_write(char character) { system_call1(CONSOLE_WRITE_SYSCALL, character); }
+int64_t console_write(char character) { return system_call1(CONSOLE_WRITE_SYSCALL, character); }

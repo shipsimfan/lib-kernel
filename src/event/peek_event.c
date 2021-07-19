@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-uint64_t peek_event(Event* pevent) { return system_call1(PEEK_EVENT_SYSCALL, (uint64_t)pevent); }
+int64_t peek_event(Event* pevent) { return system_call1(PEEK_EVENT_SYSCALL, (uint64_t)pevent); }
