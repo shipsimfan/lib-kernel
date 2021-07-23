@@ -9,11 +9,17 @@ system_call:
     ; This appears to have fixed the bug but this is not a suitable long term solution
     ; The main problem with this fix is security, a malicious program could easily
     ; exclude these lines from their code and crash the whole system.
-    mov rax, rsp
-    sub rax, 8
-    mov QWORD [rax], 0
-    sub rax, 0x1000
-    mov QWORD [rax], 0
+
+    ; UPDATE: 07/22/2021
+    ; After some tweaks in the kernel, the bug seems to have dissappeared. I saw a
+    ; freeze (but not crash) on my first run after but nothing else since. Leaving this
+    ; here just in case.
+
+    ;mov rax, rsp
+    ;sub rax, 8
+    ;mov QWORD [rax], 0
+    ;sub rax, 0x1000
+    ;mov QWORD [rax], 0
 
     syscall
     pop r10
