@@ -6,6 +6,7 @@
 typedef int64_t ProcessID;
 
 void exit_process(int64_t status);
+void kill_process(int64_t id);
 int64_t wait_process(ProcessID id);
 ProcessID execute(const char* filepath, const char** argv, const char** envp);
 
