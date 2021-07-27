@@ -11,4 +11,7 @@ void exit_thread(int64_t status) {
     destroy_tls(ptr);
 
     system_call1(EXIT_THREAD_SYSCALL, (uint64_t)status);
+
+    while (1)
+        ;
 }

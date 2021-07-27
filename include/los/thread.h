@@ -6,7 +6,7 @@
 typedef int64_t ThreadID;
 typedef int (*ThreadEntry)();
 
-void exit_thread(int64_t status);
+__attribute__((noreturn)) void exit_thread(int64_t status);
 int64_t wait_thread(ThreadID id);
 ThreadID create_thread(ThreadEntry entry);
 
