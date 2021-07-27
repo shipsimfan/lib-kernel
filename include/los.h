@@ -8,5 +8,6 @@
 #include "los/keycode.h"
 #include "los/process.h"
 #include "los/thread.h"
+#include "los/time.h"
 
 #endif

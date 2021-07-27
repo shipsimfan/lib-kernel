@@ -42,6 +42,11 @@
 // EVENT SYSTEM CALLS (0x4000 - 0x4FFF)
 #define PEEK_EVENT_SYSCALL 0x4000
 
+// TIME SYSTEM CALLS (0x5000 - 0x5FFF)
+#define GET_PROCESS_TIME_SYSCALL 0x5000
+#define GET_TIME_ZONE_SYSCALL 0x5001
+#define GET_EPOCH_TIME_SYSCALL 0x5002
+
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
 #define system_call2(code, arg1, arg2) system_call(code, arg1, arg2, 0, 0, 0)
