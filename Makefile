@@ -24,7 +24,7 @@ ASM_FLAGS := -f elf64 -g -F dwarf
 CC := clang
 CC_FLAGS := --target=x86_64-los --sysroot=$(SYSROOT_DIR) -Wall -g -c -I$(INCLUDE_DIR)
 
-AR := llvm-ar
+AR := ar
 AR_FLAGS := rcs
 
 # COLORS
