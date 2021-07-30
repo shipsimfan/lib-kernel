@@ -40,5 +40,7 @@
 #define ENOFS -36
 #define EARGSEC -37
 #define EINVSESSION -38
+#define ERDONLY -39
+#define EWRONLY -40
 
 #endif
