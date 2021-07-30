@@ -42,5 +42,7 @@
 #define EINVSESSION -38
 #define ERDONLY -39
 #define EWRONLY -40
+#define ENORESOURCE -41
+#define ECORRUPTFILESYSTEM -42
 
 #endif
