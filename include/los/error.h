@@ -44,5 +44,6 @@
 #define EWRONLY -40
 #define ENORESOURCE -41
 #define ECORRUPTFILESYSTEM -42
+#define EISFILE -43
 
 #endif
