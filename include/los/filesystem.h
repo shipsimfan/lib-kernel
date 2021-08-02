@@ -35,4 +35,7 @@ int64_t open_directory(const char* path);
 void close_directory(uint64_t dd);
 int64_t read_directory(uint64_t dd, Dirent* dest);
 
+int64_t remove_file(const char* path);
+int64_t remove_directory(const char* directory);
+
 #endif
