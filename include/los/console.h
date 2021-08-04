@@ -9,7 +9,8 @@
 #define CONSOLE_STYLE_UNDERLINE 4
 #define CONSOLE_STYLE_STRIKETHROUGH 8
 
-int64_t console_write(char character);
+int64_t console_write(const char* string, uint64_t string_length);
+int64_t console_write_ch(char character);
 int64_t console_write_str(const char* string);
 int64_t console_clear();
 int64_t console_set_attribute(uint64_t attribute);
