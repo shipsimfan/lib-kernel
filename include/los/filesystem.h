@@ -27,6 +27,7 @@ typedef struct {
 int64_t open_file(const char* filepath, uint64_t flags);
 void close_file(uint64_t fd);
 int64_t seek_file(uint64_t fd, uint64_t offset, uint64_t seek_from);
+int64_t tell_file(uint64_t fd);
 int64_t read_file(uint64_t fd, void* buffer, uint64_t buffer_len);
 int64_t write_file(uint64_t fd, void* buffer, uint64_t buffer_len);
 int64_t truncate_file(uint64_t fd, uint64_t new_length);
