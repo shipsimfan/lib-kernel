@@ -1,5 +1,5 @@
 #ifndef __LOS_CONSOLE_H
-#define __LOS_CONSOLE_H
+#define __LOS_CONSOLE_H 1
 
 #include <stdint.h>
 
