@@ -1,5 +1,5 @@
 # Open File
-Open or create a file
+Open a file descriptor and potentially create a file
 
 ## Definition
 
@@ -43,4 +43,4 @@ On error, a negative number corrisponding to the error is returned.
  * **ENOENT** - The specified file could not be found. *Note:* The path may be a directory if this error is returned.
  * **EEXIST** - *filepath* already exists as a directory while creating the file was attempted.
 
-  *Note:* **open_file()** calls driver functions, errors other than those described above may be returned.
+*Note:* **open_file()** calls driver functions, errors other than those described above may be returned.
