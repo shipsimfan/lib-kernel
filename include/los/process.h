@@ -33,8 +33,4 @@ ProcessID execute(const char* filepath, const char** argv, const char** envp, co
 int64_t get_current_working_directory(char* buffer, uint64_t buffer_len);
 int64_t set_current_working_directory(const char* path);
 
-Mutex create_mutex();
-int64_t lock_mutex(Mutex mutex);
-int64_t unlock_mutex(Mutex mutex);
-
 #endif
