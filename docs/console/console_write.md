@@ -6,9 +6,9 @@ Write characters to the console
 ```c
 #include <los/console.h>
 
-int64_t console_write(const char* string, uint64_t string_length);
-int64_t console_write_ch(char character);
-int64_t console_write_str(const char* string);
+isize console_write(const char* string, usize string_length);
+isize console_write_ch(char character);
+isize console_write_str(const char* string);
 ```
 
 ## Description

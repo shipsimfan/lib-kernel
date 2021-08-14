@@ -6,7 +6,7 @@ Create a directory
 ```c
 #include <los/filesystem.h>
 
-int64_t create_directory(const char* path);
+isize create_directory(const char* path);
 ```
 
 ## Description

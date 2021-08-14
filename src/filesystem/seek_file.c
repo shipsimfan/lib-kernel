@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-int64_t seek_file(uint64_t fd, uint64_t offset, uint64_t seek_from) { return system_call3(SEEK_FILE_SYSCALL, fd, offset, seek_from); }
+isize seek_file(usize fd, usize offset, usize seek_from) { return system_call3(SEEK_FILE_SYSCALL, fd, offset, seek_from); }

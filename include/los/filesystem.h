@@ -1,8 +1,7 @@
 #ifndef __LOS_FILESYSTEM_H
 #define __LOS_FILESYSTEM_H
 
-#include <stddef.h>
-#include <stdint.h>
+#include "types.h"
 
 #define SEEK_FROM_START 0
 #define SEEK_FROM_CURRENT 1
@@ -20,24 +19,24 @@
 
 typedef struct {
     char name[256];
-    size_t type;
-    size_t size;
+    usize type;
+    usize size;
 } Dirent;
 
-int64_t open_file(const char* filepath, uint64_t flags);
-void close_file(uint64_t fd);
-int64_t seek_file(uint64_t fd, uint64_t offset, uint64_t seek_from);
-int64_t tell_file(uint64_t fd);
-int64_t read_file(uint64_t fd, void* buffer, uint64_t buffer_len);
-int64_t write_file(uint64_t fd, void* buffer, uint64_t buffer_len);
-int64_t truncate_file(uint64_t fd, uint64_t new_length);
+isize open_file(const char* filepath, usize flags);
+void close_file(usize fd);
+isize seek_file(usize fd, usize offset, usize seek_from);
+isize tell_file(usize fd);
+isize read_file(usize fd, void* buffer, usize buffer_len);
+isize write_file(usize fd, void* buffer, usize buffer_len);
+isize truncate_file(usize fd, usize new_length);
 
-int64_t open_directory(const char* path);
-void close_directory(uint64_t dd);
-int64_t read_directory(uint64_t dd, Dirent* dest);
+isize open_directory(const char* path);
+void close_directory(usize dd);
+isize read_directory(usize dd, Dirent* dest);
 
-int64_t create_directory(const char* path);
-int64_t remove_file(const char* path);
-int64_t remove_directory(const char* directory);
+isize create_directory(const char* path);
+isize remove_file(const char* path);
+isize remove_directory(const char* directory);
 
 #endif

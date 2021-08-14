@@ -6,7 +6,7 @@ Get the current position of a file descriptor
 ```c
 #include <los/filesystem.h>
 
-int64_t tell_file(uint64_t fd);
+isize tell_file(usize fd);
 ```
 
 ## Description

@@ -6,7 +6,7 @@ Close a directory descriptor
 ```c
 #include <los/filesystem.h>
 
-void close_directory(uint64_t dd);
+void close_directory(usize dd);
 ```
 
 ## Description

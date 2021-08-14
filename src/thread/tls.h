@@ -1,7 +1,7 @@
 #ifndef __TLS_H
 #define __TLS_H
 
-#include <stddef.h>
+#include <los/types.h>
 
 #define MASTER_TLS_LOCATION ((void*)0x700000000000)
 
@@ -11,7 +11,7 @@ typedef struct ThreadStruct_t {
     void* tls_ptr;
 } ThreadStruct;
 
-void initialize_tls(size_t tls_size, size_t tls_alignment);
+void initialize_tls(usize tls_size, usize tls_alignment);
 
 ThreadStruct* create_tls();
 void destroy_tls(ThreadStruct* tls);

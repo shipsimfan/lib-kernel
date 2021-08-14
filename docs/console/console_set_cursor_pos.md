@@ -6,7 +6,7 @@ Sets the console's cursor's position
 ```c
 #include <los/console.h>
 
-int64_t console_set_cursor_pos(int64_t x, int64_t y);
+isize console_set_cursor_pos(isize x, isize y);
 ```
 
 ## Description

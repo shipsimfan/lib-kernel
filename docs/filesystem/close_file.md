@@ -6,7 +6,7 @@ Close a file descriptor
 ```c
 #include <los/filesystem.h>
 
-void close_file(uint64_t fd);
+void close_file(usize fd);
 ```
 
 ## Description

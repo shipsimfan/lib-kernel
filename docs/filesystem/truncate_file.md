@@ -6,7 +6,7 @@ Truncate a file to a specific length
 ```c
 #include <los/filesystem.h>
 
-int64_t truncate_file(uint64_t fd, uint64_t new_length);
+isize truncate_file(usize fd, usize new_length);
 ```
 
 ## Description

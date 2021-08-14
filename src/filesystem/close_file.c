@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-void close_file(uint64_t fd) { system_call1(CLOSE_FILE_SYSCALL, fd); }
+void close_file(usize fd) { system_call1(CLOSE_FILE_SYSCALL, fd); }

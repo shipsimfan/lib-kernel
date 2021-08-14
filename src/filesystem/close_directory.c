@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-void close_directory(uint64_t dd) { system_call1(CLOSE_DIRECTORY_SYSCALL, dd); }
+void close_directory(usize dd) { system_call1(CLOSE_DIRECTORY_SYSCALL, dd); }

@@ -13,7 +13,7 @@ Open a file descriptor and potentially create a file
 #define OPEN_APPEND
 #define OPEN_CREATE
 
-int64_t open_file(const char* filepath, uint64_t flags);
+isize open_file(const char* filepath, usize flags);
 ```
 
 ## Description

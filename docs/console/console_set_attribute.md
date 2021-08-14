@@ -12,7 +12,7 @@ Sets the console's attributes
 #define CONSOLE_STYLE_UNDERLINE
 #define CONSOLE_STYLE_STRIKETHROUGH
 
-int64_t console_set_attribute(uint64_t attribute);
+isize console_set_attribute(usize attribute);
 ```
 
 ## Description

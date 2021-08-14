@@ -2,6 +2,6 @@
 
 #include <los/syscall.h>
 
-int64_t tell_file(uint64_t fd) {
+isize tell_file(usize fd) {
     return system_call1(TELL_FILE_SYSCALL, fd);
 }

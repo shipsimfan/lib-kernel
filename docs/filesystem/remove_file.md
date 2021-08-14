@@ -6,7 +6,7 @@ Remove a file
 ```c
 #include <los/filesystem.h>
 
-int64_t remove_file(const char* path);
+isize remove_file(const char* path);
 ```
 
 ## Description

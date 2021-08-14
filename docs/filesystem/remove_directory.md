@@ -6,7 +6,7 @@ Remove a directory
 ```c
 #include <los/filesystem.h>
 
-int64_t remove_directory(const char* directory);
+isize remove_directory(const char* directory);
 ```
 
 ## Description

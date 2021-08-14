@@ -1,13 +1,13 @@
 #ifndef __LOS_THREAD_H
 #define __LOS_THREAD_H
 
-#include <stdint.h>
+#include "types.h"
 
-typedef int64_t ThreadID;
+typedef isize ThreadID;
 typedef int (*ThreadEntry)();
 
-__attribute__((noreturn)) void exit_thread(int64_t status);
-int64_t wait_thread(ThreadID id);
+__attribute__((noreturn)) void exit_thread(isize status);
+isize wait_thread(ThreadID id);
 ThreadID create_thread(ThreadEntry entry);
 
 #endif

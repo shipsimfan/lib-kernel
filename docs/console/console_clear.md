@@ -6,7 +6,7 @@ Clears the console
 ```c
 #include <los/console.h>
 
-int64_t console_clear();
+isize console_clear();
 ```
 
 ## Description

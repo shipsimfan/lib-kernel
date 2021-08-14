@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-int64_t read_directory(uint64_t dd, Dirent* dest) { return system_call2(READ_DIRECTORY_SYSCALL, dd, (uint64_t)dest); }
+isize read_directory(usize dd, Dirent* dest) { return system_call2(READ_DIRECTORY_SYSCALL, dd, (usize)dest); }

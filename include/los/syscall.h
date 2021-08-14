@@ -1,7 +1,7 @@
 #ifndef __LOS_SYSCALL_H
 #define __LOS_SYSCALL_H
 
-#include <stdint.h>
+#include "types.h"
 
 // PROCESS SYSTEM CALLS (0x0000 - 0x0FFF)
 #define WAIT_PROCESS_SYSCALL 0x0000
@@ -61,6 +61,6 @@
 #define system_call4(code, arg1, arg2, arg3, arg4) system_call(code, arg1, arg2, arg3, arg4, 0)
 #define system_call5(code, arg1, arg2, arg3, arg4, arg5) system_call(code, arg1, arg2, arg3, arg4, arg5)
 
-int64_t system_call(uint64_t code, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t arg4, uint64_t arg5);
+isize system_call(usize code, usize arg1, usize arg2, usize arg3, usize arg4, usize arg5);
 
 #endif

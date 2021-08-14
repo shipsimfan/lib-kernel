@@ -9,7 +9,7 @@ Seek to a position in a file.
 #define SEEK_FROM_CURRENT
 #define SEEK_FROM_END
 
-int64_t seek_file(uint64_t fd, uint64_t offset, uint64_t seek_from);
+isize seek_file(usize fd, usize offset, usize seek_from);
 ```
 
 ## Description

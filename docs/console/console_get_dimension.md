@@ -6,8 +6,8 @@ Get the dimensions of the console
 ```c
 #include <los/console.h>
 
-int64_t console_get_width();
-int64_t console_get_height();
+isize console_get_width();
+isize console_get_height();
 ```
 
 ## Description

@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-int64_t read_file(uint64_t fd, void* buffer, uint64_t buffer_len) { return system_call3(READ_FILE_SYSCALL, fd, (uint64_t)buffer, buffer_len); }
+isize read_file(usize fd, void* buffer, usize buffer_len) { return system_call3(READ_FILE_SYSCALL, fd, (usize)buffer, buffer_len); }

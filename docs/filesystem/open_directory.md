@@ -6,7 +6,7 @@ Open a directory
 ```c
 #include <los/filesystem.h>
 
-int64_t open_directory(const char* path);
+isize open_directory(const char* path);
 ```
 
 ## Description

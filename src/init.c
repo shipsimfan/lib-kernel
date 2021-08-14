@@ -1,6 +1,6 @@
 #include "thread/tls.h"
 
-void initialize_lib_kernel(size_t tls_size, size_t tls_alignment) {
+void initialize_lib_kernel(usize tls_size, usize tls_alignment) {
     // Initialize the heap
     // initialize_heap();
 

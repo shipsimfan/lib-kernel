@@ -3,20 +3,20 @@
 #include <los/memory.h>
 #include <los/syscall.h>
 
-size_t master_tls_size;
-size_t master_tls_alloc_size;
-size_t master_tls_aligment;
+usize master_tls_size;
+usize master_tls_alloc_size;
+usize master_tls_aligment;
 
-void* memcpy(void* dest, const void* src, size_t n) {
+void* memcpy(void* dest, const void* src, usize n) {
     char* ptr1 = dest;
     const char* ptr2 = src;
-    for (size_t i = 0; i < n; i++, ptr1++, ptr2++)
+    for (usize i = 0; i < n; i++, ptr1++, ptr2++)
         *ptr1 = *ptr2;
 
     return dest;
 }
 
-void initialize_tls(size_t tls_size, size_t tls_alignment) {
+void initialize_tls(usize tls_size, usize tls_alignment) {
     master_tls_size = tls_size;
     master_tls_aligment = tls_alignment;
 
@@ -36,7 +36,7 @@ void initialize_tls(size_t tls_size, size_t tls_alignment) {
 
 ThreadStruct* create_tls() {
     // Allocated tls
-    size_t allocation_size = master_tls_alloc_size + sizeof(ThreadStruct);
+    usize allocation_size = master_tls_alloc_size + sizeof(ThreadStruct);
     void* allocation = allocate_memory(allocation_size, master_tls_aligment);
     ThreadStruct* thread_struct = allocation + master_tls_alloc_size;
     void* tls = (void*)thread_struct - master_tls_size;
@@ -54,4 +54,4 @@ ThreadStruct* create_tls() {
 
 void destroy_tls(ThreadStruct* tls) { free_memory(tls->allocation_ptr); }
 
-void set_current_thread_tls(ThreadStruct* tls) { system_call1(SET_TLS_BASE_SYSCALL, (uint64_t)tls); }
+void set_current_thread_tls(ThreadStruct* tls) { system_call1(SET_TLS_BASE_SYSCALL, (usize)tls); }

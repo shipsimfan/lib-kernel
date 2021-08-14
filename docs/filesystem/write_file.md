@@ -6,7 +6,7 @@ Write to a file descriptor
 ```c
 #include <los/filesystem.h>
 
-int64_t write_file(uint64_t fd, void* buffer, uint64_t buffer_len);
+isize write_file(usize fd, void* buffer, usize buffer_len);
 ```
 
 ## Description

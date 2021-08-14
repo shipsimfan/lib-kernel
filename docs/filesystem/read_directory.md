@@ -11,11 +11,11 @@ Read a directory
 
 typedef struct {
     char name[256];
-    size_t type;
-    size_t size;
+    usize type;
+    usize size;
 } Dirent;
 
-int64_t read_directory(uint64_t dd, Dirent* dest);
+isize read_directory(usize dd, Dirent* dest);
 ```
 
 ## Description

@@ -6,10 +6,10 @@ Sets the console's colors
 ```c
 #include <los/console.h>
 
-int64_t console_set_foreground(uint64_t color);
-int64_t console_set_foreground_rgb(uint8_t red, uint8_t green, uint8_t blue);
-int64_t console_set_background(uint64_t color);
-int64_t console_set_background_rgb(uint8_t red, uint8_t green, uint8_t blue);
+isize console_set_foreground(usize color);
+isize console_set_foreground_rgb(uint8_t red, uint8_t green, uint8_t blue);
+isize console_set_background(usize color);
+isize console_set_background_rgb(uint8_t red, uint8_t green, uint8_t blue);
 ```
 
 ## Description
