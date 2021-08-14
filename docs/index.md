@@ -12,5 +12,9 @@
  - [Thread](thread/index.md)
  - [Time](time/index.md)
 
-## Errors
-A list of all system call errors and their descriptions can be found [here](error.md)
+## Other Headers
+*lib-kernel* contains other headers which contain things beyond system calls.
+ - [Errors](errors.md)
+ - [Keycodes](keycode.md)
+ - [System Call List](system_call.md)
+ - [Types](types.md)
