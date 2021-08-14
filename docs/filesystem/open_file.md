@@ -33,7 +33,7 @@ On success, the file descriptor is returned.
 On error, a negative number corrisponding to the error is returned.
 
 ## Errors
- * **EARGSEC** - The *filpath* extends out of userspace.
+ * **EARGSEC** - The *filepath* extends out of userspace.
  * **EILSEQ** - *filepath* is not valid UTF-8.
  * **EINVALIDARGUMENT**
     1. *flags* does not contain *OPEN_READ* *OPEN_WRITE*, or *OPEN_READWRITE*.

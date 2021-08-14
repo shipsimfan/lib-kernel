@@ -4,6 +4,8 @@ Read a directory
 ## Definition
 
 ```c
+#include <los/filesystem.h>
+
 #define DIRENT_TYPE_DIRECTORY
 #define DIRENT_TYPE_FILE
 
