@@ -6,7 +6,6 @@
  - [Console](console/index.md)
  - [Event](event/index.md)
  - [Filesystem](filesystem/index.md)
- - [Keycode](keycode/index.md)
  - [Memory](memory/index.md)
  - [Process](process/index.md)
  - [Thread](thread/index.md)
