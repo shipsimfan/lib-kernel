@@ -2,47 +2,47 @@
 The following list of errors is formated
  * (ERROR_NUMBER) ERROR_DEFINE - Error Description
 
- * (0) EOK - Success
- * (-1) EDOM - Out of domain
- * (-2) ERANGE - Out of range
- * (-3) EACCESS - Unable to access
- * (-4) EINUSE - Currently in use
- * (-5) ENOTAVAILABLE - Not available
- * (-6) ENOTSUP - Not supported
- * (-7) EAGAIN - Try again
- * (-8) EALREADY - Already started/completed
- * (-9) EBADD - Invalid descriptor
- * (-10) EBADMSG - Bad message
- * (-11) EBADRQC - Bad request code
- * (-12) EBUSY - Busy
- * (-13) ECANCELLED - Cancelled
- * (-14) EEXIST - Already exists
- * (-15) EFAULT - Fault
- * (-16) E2BIG - Too big
- * (-17) EILSEQ - Illegal Sequence
- * (-18) EINPROGRESS - In progress
- * (-19) EINVALIDARGUMENT - Invalid Argument
- * (-20) EIO - Input/Output error
- * (-21) EISDIR - Is a directory
- * (-22) ENAMETOOLONG - Name too long
- * (-23) ENODEV - No device
- * (-24) ENOENT - No entry
- * (-25) ENOEXEC - Not executable
- * (-26) ENOSPC - No space
- * (-27) ENOSYS - Not implemented
- * (-28) ENOTDIR - Not a directory
- * (-29) ENOTEMPTY - Not empty
- * (-30) ENOTTY - Invalid I/O control operation
- * (-31) ENOTUNIQ - Not unique
- * (-32) EROFS - Read-only filesystem
- * (-33) ESRCH - No process
- * (-34) ETIMEDOUT - Timed out
- * (-35) ENOTFOUND - Not found
- * (-36) ENOFS - No filesystem
- * (-37) EARGSEC - Argument security error
- * (-38) EINVSESSION - Invalid session
- * (-39) ERDONLY - Read-only
- * (-40) EWRONLY - Write-only
- * (-41) ENORESOURCE - No resource
- * (-42) ECORRUPTFILESYSTEM - Corrupt filesystem
- * (-43) EISFILE - Is file
+ * **EOK** (0) - Success
+ * **EDOM** (-1) - Out of domain
+ * **ERANGE** (-2) - Out of range
+ * **EACCESS** (-3) - Unable to access
+ * **EINUSE** (-4) - Currently in use
+ * **ENOTAVAILABLE** (-5) - Not available
+ * **ENOTSUP** (-6) - Not supported
+ * **EAGAIN** (-7) - Try again
+ * **EALREADY** (-8) - Already started/completed
+ * **EBADD** (-9) - Invalid descriptor
+ * **EBADMSG** (-10) - Bad message
+ * **EBADRQC** (-11) - Bad request code
+ * **EBUSY** (-12) - Busy
+ * **ECANCELLED** (-13) - Cancelled
+ * **EEXIST** (-14) - Already exists
+ * **EFAULT** (-15) - Fault
+ * **E2BIG** (-16) - Too big
+ * **EILSEQ** (-17) - Illegal Sequence
+ * **EINPROGRESS** (-18) - In progress
+ * **EINVALIDARGUMENT** (-19) - Invalid Argument
+ * **EIO** (-20) - Input/Output error
+ * **EISDIR** (-21) - Is a directory
+ * **ENAMETOOLONG** (-22) - Name too long
+ * **ENODEV** (-23) - No device
+ * **ENOENT** (-24) - No entry
+ * **ENOEXEC** (-25) - Not executable
+ * **ENOSPC** (-26) - No space
+ * **ENOSYS** (-27) - Not implemented
+ * **ENOTDIR** (-28) - Not a directory
+ * **ENOTEMPTY** (-29) - Not empty
+ * **ENOTTY** (-30) - Invalid I/O control operation
+ * **ENOTUNIQ** (-31) - Not unique
+ * **EROFS** (-32) - Read-only filesystem
+ * **ESRCH** (-33) - No process
+ * **ETIMEDOUT** (-34) - Timed out
+ * **ENOTFOUND** (-35) - Not found
+ * **ENOFS** (-36) - No filesystem
+ * **EARGSEC** (-37) - Argument security error
+ * **EINVSESSION** (-38) - Invalid session
+ * **ERDONLY** (-39) - Read-only
+ * **EWRONLY** (-40) - Write-only
+ * **ENORESOURCE** (-41) - No resource
+ * **ECORRUPTFILESYSTEM** (-42) - Corrupt filesystem
+ * **EISFILE** (-43) - Is file
