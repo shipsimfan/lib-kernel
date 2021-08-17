@@ -7,7 +7,7 @@ usize master_tls_size;
 usize master_tls_alloc_size;
 usize master_tls_aligment;
 
-void* memcpy(void* dest, const void* src, usize n) {
+void* __memcpy(void* dest, const void* src, usize n) {
     char* ptr1 = dest;
     const char* ptr2 = src;
     for (usize i = 0; i < n; i++, ptr1++, ptr2++)
@@ -42,7 +42,7 @@ ThreadStruct* create_tls() {
     void* tls = (void*)thread_struct - master_tls_size;
 
     // Copy master tls
-    memcpy(tls, MASTER_TLS_LOCATION, master_tls_size);
+    __memcpy(tls, MASTER_TLS_LOCATION, master_tls_size);
 
     // Setup thread struct
     thread_struct->self_ptr = thread_struct;
