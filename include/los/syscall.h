@@ -62,6 +62,9 @@
 #define IOCTRL_DEVICE_SYSCALL 0x6004
 #define LIST_DEVICE_CHILDREN_SYSCALL 0x6005
 
+// MEMORY SYSTEM CALLS (0x7000 - 0x7FFF)
+#define GET_MEMORY_USAGE_SYSCALL 0x7000
+
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
 #define system_call2(code, arg1, arg2) system_call(code, arg1, arg2, 0, 0, 0)
