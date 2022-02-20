@@ -54,13 +54,25 @@
 #define GET_TIME_ZONE_SYSCALL 0x5001
 #define GET_EPOCH_TIME_SYSCALL 0x5002
 
+// DEVICE SYSTEM CALLS (0x6000 - 0x6FFF)
+#define OPEN_DEVICE_SYSCALL 0x6000
+#define CLOSE_DEVICE_SYSCALL 0x6001
+#define READ_DEVICE_SYSCALL 0x6002
+#define WRITE_DEVICE_SYSCALL 0x6003
+#define IOCTRL_DEVICE_SYSCALL 0x6004
+#define LIST_DEVICE_CHILDREN_SYSCALL 0x6005
+
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
 #define system_call2(code, arg1, arg2) system_call(code, arg1, arg2, 0, 0, 0)
-#define system_call3(code, arg1, arg2, arg3) system_call(code, arg1, arg2, arg3, 0, 0)
-#define system_call4(code, arg1, arg2, arg3, arg4) system_call(code, arg1, arg2, arg3, arg4, 0)
-#define system_call5(code, arg1, arg2, arg3, arg4, arg5) system_call(code, arg1, arg2, arg3, arg4, arg5)
+#define system_call3(code, arg1, arg2, arg3)                                   \
+    system_call(code, arg1, arg2, arg3, 0, 0)
+#define system_call4(code, arg1, arg2, arg3, arg4)                             \
+    system_call(code, arg1, arg2, arg3, arg4, 0)
+#define system_call5(code, arg1, arg2, arg3, arg4, arg5)                       \
+    system_call(code, arg1, arg2, arg3, arg4, arg5)
 
-isize system_call(usize code, usize arg1, usize arg2, usize arg3, usize arg4, usize arg5);
+isize system_call(usize code, usize arg1, usize arg2, usize arg3, usize arg4,
+                  usize arg5);
 
 #endif
