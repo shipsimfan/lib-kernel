@@ -65,6 +65,11 @@
 // MEMORY SYSTEM CALLS (0x7000 - 0x7FFF)
 #define GET_MEMORY_USAGE_SYSCALL 0x7000
 
+// SESSION SYSTEM CALLS (0x8000 - 0x8FFF)
+#define GET_SESSION_ID_SYSCALL 0x8000
+#define GET_SESSION_PROCESSES_SYSCALL 0x8001
+#define GET_PROCESS_INFO_SYSCALL 0x8002
+
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
 #define system_call2(code, arg1, arg2) system_call(code, arg1, arg2, 0, 0, 0)
