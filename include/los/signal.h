@@ -17,7 +17,7 @@
 isize raise_process_s(usize sid, usize pid, u8 sig);
 isize raise_process(usize pid, u8 sig);
 isize raise_thread(usize tid, u8 sig);
-isize raise_self(u8 sig);
+void raise_self(u8 sig);
 
 void set_thread_signal_type(u8 sig, usize type);
 void set_process_signal_type(u8 sig, usize type);
