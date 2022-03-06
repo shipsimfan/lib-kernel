@@ -45,5 +45,6 @@
 #define ENORESOURCE -41
 #define ECORRUPTFILESYSTEM -42
 #define EISFILE -43
+#define EINVTHREAD -44
 
 #endif
