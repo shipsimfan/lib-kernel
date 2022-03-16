@@ -16,5 +16,7 @@ isize raise_process(usize pid, u8 sig);
 void raise_self(u8 sig);
 
 void set_signal_type(u8 sig, usize type);
+void mask_signal(u8 sig);
+void unmask_signal(u8 sig);
 
 #endif
