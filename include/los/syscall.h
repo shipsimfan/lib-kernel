@@ -70,6 +70,14 @@
 #define GET_SESSION_PROCESSES_SYSCALL 0x8001
 #define GET_PROCESS_INFO_SYSCALL 0x8002
 
+// SIGNAL SYSTEM CALLS (0x9000 - 0x9FFF)
+#define RAISE_SESSION_SYSCALL 0x9000
+#define RAISE_PROCESS_SYSCALL 0x9001
+#define RAISE_SELF_SYSCALL 0x9002
+#define SET_SIGNAL_TYPE_SYSCALL 0x9003
+#define MASK_SIGNAL_SYSCALL 0x9004
+#define UNMASK_SIGNAL_SYSCALL 0x9005
+
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
 #define system_call2(code, arg1, arg2) system_call(code, arg1, arg2, 0, 0, 0)

@@ -9,6 +9,7 @@
 #include "los/keycode.h"
 #include "los/process.h"
 #include "los/session.h"
+#include "los/signal.h"
 #include "los/thread.h"
 #include "los/time.h"
 
