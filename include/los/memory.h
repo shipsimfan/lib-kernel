@@ -12,10 +12,10 @@ typedef struct MemoryUsage_t {
     usize kernel_stack_usage;
 } MemoryUsage;
 
-void free_memory(void *ptr);
-void *allocate_memory(usize size, usize alignment);
-usize get_allocation_size(void *ptr);
+void free_memory(void* ptr);
+void* allocate_memory(usize size, usize alignment);
+usize get_allocation_size(void* ptr);
 
-void get_memory_usage(MemoryUsage *target);
+void get_memory_usage(MemoryUsage* target);
 
 #endif
