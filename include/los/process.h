@@ -28,7 +28,8 @@ __attribute__((noreturn)) void exit_process(isize status);
 void kill_process(isize id);
 isize wait_process(ProcessID id);
 
-ProcessID execute(const char* filepath, const char** argv, const char** envp, const StandardIO* stdio);
+ProcessID execute(const char* filepath, const char** argv, const char** envp,
+                  const StandardIO* stdio, bool inherit_signals);
 
 isize get_current_working_directory(char* buffer, usize buffer_len);
 isize set_current_working_directory(const char* path);
