@@ -13,5 +13,6 @@ typedef struct {
 } Event;
 
 isize peek_event(Event* pevent);
+isize poll_event(Event* pevent);
 
 #endif
