@@ -21,5 +21,6 @@ isize console_set_background_rgb(uint8_t red, uint8_t green, uint8_t blue);
 isize console_set_cursor_pos(isize x, isize y);
 isize console_get_width();
 isize console_get_height();
+isize console_set_cursor_state(bool state);
 
 #endif
