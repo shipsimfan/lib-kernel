@@ -4,8 +4,9 @@
 #include "types.h"
 
 isize create_mutex(usize md);
-isize destroy_device(usize md);
+void destroy_device(usize md);
 isize lock_mutex(usize md);
 isize try_lock_mutex(usize md);
+isize unlock_mutex(usize md);
 
 #endif
