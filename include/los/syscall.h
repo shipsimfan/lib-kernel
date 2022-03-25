@@ -81,6 +81,7 @@
 #define SET_SIGNAL_TYPE_SYSCALL 0x9003
 #define MASK_SIGNAL_SYSCALL 0x9004
 #define UNMASK_SIGNAL_SYSCALL 0x9005
+#define SET_USERSPACE_SIGNAL_HANDLER_SYSCALL 0x9006
 
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
