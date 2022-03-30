@@ -79,11 +79,11 @@
 #define UNMASK_SIGNAL_SYSCALL 0x9005
 
 // USERSPACE LOCKS SYSTEM CALLS (0xA000 - 0xAFFF)
-#define CREATE_MUTEX_SYSCALL: usize 0xA000
-#define LOCK_MUTEX_SYSCALL: usize = 0xA001
-#define TRY_LOCK_MUTEX_SYSCALL: usize = 0xA002
-#define UNLOCK_MUTEX_SYSCALL: usize = 0xA003
-#define DESTROY_MUTEX_SYSCALL: usize = 0xA004
+#define CREATE_MUTEX_SYSCALL 0xA000
+#define LOCK_MUTEX_SYSCALL 0xA001
+#define TRY_LOCK_MUTEX_SYSCALL 0xA002
+#define UNLOCK_MUTEX_SYSCALL 0xA003
+#define DESTROY_MUTEX_SYSCALL 0xA004
 
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
