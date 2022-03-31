@@ -2,4 +2,4 @@
 
 #include <los/syscall.h>
 
-void create_mutex(usize md) { system_call1(CREATE_MUTEX_SYSCALL, md); }
+isize create_mutex(usize md) { return system_call1(CREATE_MUTEX_SYSCALL, md); }
