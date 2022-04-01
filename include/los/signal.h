@@ -11,6 +11,7 @@
 
 #define SIGNAL_TYPE_TERMINATE 0
 #define SIGNAL_TYPE_IGNORE 1
+#define SIGNAL_TYPE_USERSPACE 2
 
 typedef struct {
     usize r15;
@@ -32,7 +33,7 @@ typedef struct {
     usize rip;
 } SignalContext;
 
-typedef void (*SignalHandler)(SignalContext);
+typedef void (*SignalHandler)(u8, SignalContext);
 
 isize raise_session(usize sid, usize pid, u8 sig);
 isize raise_process(usize pid, u8 sig);
