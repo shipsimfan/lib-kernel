@@ -46,5 +46,6 @@
 #define ECORRUPTFILESYSTEM -42
 #define EISFILE -43
 #define EINVTHREAD -44
+#define EINT -45
 
 #endif
