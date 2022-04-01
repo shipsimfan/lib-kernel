@@ -89,8 +89,12 @@
 #define READ_PIPE_SYSCALL 0xA003
 #define WRITE_PIPE_SYSCALL 0xA004
 
-
-
+// USERSPACE LOCKS SYSTEM CALLS (0xB000 - 0xBFFF)
+#define CREATE_MUTEX_SYSCALL 0xB000
+#define LOCK_MUTEX_SYSCALL 0xB001
+#define TRY_LOCK_MUTEX_SYSCALL 0xB002
+#define UNLOCK_MUTEX_SYSCALL 0xB003
+#define DESTROY_MUTEX_SYSCALL 0xB004
 
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)

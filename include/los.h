@@ -13,5 +13,6 @@
 #include "los/signal.h"
 #include "los/thread.h"
 #include "los/time.h"
+#include "los/userspace_mutex.h"
 
 #endif
