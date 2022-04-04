@@ -96,6 +96,13 @@
 #define UNLOCK_MUTEX_SYSCALL 0xB003
 #define DESTROY_MUTEX_SYSCALL 0xB004
 
+// CONDITIONAL VARIABLE SYSTEM CALLS (0xD000 - 0xDFFF)
+#define CREATE_COND_VAR_SYSCALL 0xC000
+#define WAIT_COND_VAR_SYSCALL 0xC001
+#define SIGNAL_COND_VAR 0xC002
+#define BROADCAST_COND_VAR 0xC003
+#define DESTROY_COND_VAR_SYSCALL 0xC004
+
 #define system_call0(code) system_call(code, 0, 0, 0, 0, 0)
 #define system_call1(code, arg1) system_call(code, arg1, 0, 0, 0, 0)
 #define system_call2(code, arg1, arg2) system_call(code, arg1, arg2, 0, 0, 0)
