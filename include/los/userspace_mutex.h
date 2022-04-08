@@ -3,7 +3,7 @@
 
 #include "types.h"
 
-isize create_mutex(usize md);
+isize create_mutex();
 isize lock_mutex(usize md);
 isize try_lock_mutex(usize md);
 void unlock_mutex(usize md);
