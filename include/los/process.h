@@ -26,6 +26,7 @@ typedef struct {
 
 __attribute__((noreturn)) void exit_process(isize status);
 void kill_process(isize id);
+void kill_thread(isize id);
 isize wait_process(ProcessID id);
 
 ProcessID execute(const char* filepath, const char** argv, const char** envp,
