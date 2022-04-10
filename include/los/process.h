@@ -6,6 +6,8 @@
 #define STDIO_TYPE_NONE 0
 #define STDIO_TYPE_CONSOLE 1
 #define STDIO_TYPE_FILE 2
+#define STDIO_TYPE_PIPE_READER 3
+#define STDIO_TYPE_PIPE_WRITER 4
 
 typedef isize ProcessID;
 typedef isize Mutex;
@@ -34,5 +36,7 @@ ProcessID execute(const char* filepath, const char** argv, const char** envp,
 
 isize get_current_working_directory(char* buffer, usize buffer_len);
 isize set_current_working_directory(const char* path);
+
+ProcessID get_process_id();
 
 #endif
